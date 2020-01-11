@@ -2,20 +2,20 @@
 int main()
 {
     char shuzu[100];
-    int number,word=1;          //word±íÊ¾µ¥´ÊÊıÁ¿
-    char blank;                 //blank±íÊ¾¿Õ¸ñÊıÁ¿
+    int number,word=1;          //wordè¡¨ç¤ºå•è¯æ•°é‡
+    char blank;                 //blankè¡¨ç¤ºç©ºæ ¼æ•°é‡
     gets(shuzu);
-//²»ÄÜÎª¿Õ
+//ä¸èƒ½ä¸ºç©º
     if(shuzu[0]=='\0')
     {
         printf("there is no char!!\n");
     }
-//Ê××ÖÄ¸²»ÄÜÊÇ¿Õ¸ñ
+//é¦–å­—æ¯ä¸èƒ½æ˜¯ç©ºæ ¼
     else if(shuzu[0]==' ')
     {
         printf("first char just a blank!!\n");
     }
-//ÅĞ¶Ï×Ü¹²ÓĞ¼¸¸ö¿Õ¸ñ´Ó¶øÍÆËã³öÓĞ¼¸¸öµ¥´Ê
+//åˆ¤æ–­æ€»å…±æœ‰å‡ ä¸ªç©ºæ ¼ä»è€Œæ¨ç®—å‡ºæœ‰å‡ ä¸ªå•è¯
     else
     {
         for(number=0;shuzu[number]!='\0';number++);
@@ -29,7 +29,7 @@ int main()
         printf("%d\n",word);
     }
 
-//Á½ÖÖÊä³ö
+//ä¸¤ç§è¾“å‡º
     for(number=0;shuzu[number]!='\0';number++)
     {
         printf("%c",shuzu[number]);
